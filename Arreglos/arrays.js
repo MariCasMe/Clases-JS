@@ -105,7 +105,7 @@ del final del arrayl Sigue el principio LIFO(Last In First Out ).
 */
 console.log("**Métodos de arrays**")
 //Array de la cohorte 28
-const ch28=["Mari", "Andrea", "Pessy", "Fer", "Ingrid", "Blanca","Pau", "Nancy","Andrea"];
+const ch28=["Mari", "Andrea", "Pessy", "AnaFer", "Ingrid", "Blanca","Pau", "Nancy","Andrea"];
 console.log(`Array original: ${ch28}`);
 /*    indexOf() retorna el primer indice en el que se puede encontrar unelemento dado en
                 el array o retorna -1 si el elemento no está presente*/
@@ -143,3 +143,66 @@ console.log(ch28);
 //      slice() Elimina elementos anteriores a la posicion definida sin modificar el array original
 let sliceCh28=ch28.slice(7);
 console.log(sliceCh28);
+
+console.log(ch28);
+let agregandoMagali=ch28.unshift("Magali");
+console.log(ch28);
+
+//         for each() recorre el array, itera sobre cada elemento y ejecuta una función de devolución para cada elemento.
+ch28.forEach(elemento=>console.log(elemento));
+
+//      sort() Ordena alfabéticamente el array (a-z)
+let sortCh28=ch28.sort();
+console.log(ch28);
+
+//      reverse() Cambia el sentido del ordenamiento
+let reverseCh28=ch28.reverse();
+console.log(ch28);
+
+let reverseCh28b=ch28.reverse();
+console.log(ch28);
+
+/*
+==========Objetos en programación=======
+Un automovil es un objeto, ya que tiene propiedades y métodos específicos. 
+Los métodos son acciones específicas.
+
+----Propiedades del automóvil
+marca
+modelo
+peso
+color
+numero de llantas
+etc...
+
+---Métodos 
+frenar
+acelerar 
+arrancar
+etc...
+
+A pesar de tener las mismas propiedades, los valores de estas propiedades son 
+diferentes para cada automovil.
+También los métodos son los mismos, sin embargo, se ejecutan en momentos diferentes.
+Todos los objetos poseen propiedades y métodos con valores diferentes.
+
+Sintaxis
+        const object={key1(property):value1, key2(property):value2, key3(property):value3,...};
+*/
+//Objeto en JS
+const automovil={
+                    marca:"KIA",
+                    clase:"Forte",
+                    peso:900,
+                    color:"Gris óxido",
+                    modelo:2022,
+                    llantas:4,
+                    puertas:4
+                };
+console.log(automovil);
+
+//Acceder a las propiedades y valores de un objeto
+let marcaAutomovil=automovil.marca;
+console.log(marcaAutomovil);
+
+console.log(automovil.modelo);
